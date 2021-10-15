@@ -33,40 +33,40 @@ export default function Main() {
       </div>
       <div className="main__service">
         <div className="main__descriptions">
-          <img src={atom} />
+          <img src={atom} alt="atom"/>
           <div>
             <p>01</p>
             <h2>Ux/Ui</h2>
             <p>Through research to prepare the best solutions</p>
           </div>
-          <img src={play} />
+          <img src={play} alt="arrow"/>
         </div>
         <div className="main__descriptions">
-          <img src={website} />
+          <img src={website} alt="website"/>
           <div>
             <p>02</p>
             <h2>Web design</h2>
             <p>Full responsive and equipped with modern technology</p>
           </div>
-          <img src={play} />
+          <img src={play} alt="arrow"/>
         </div>
         <div className="main__descriptions">
-          <img src={mobile} />
+          <img src={mobile} alt="mobile"/>
           <div>
             <p>03</p>
             <h2>Applications</h2>
             <p>Indyvidually planned solutions to provide best answers to your problems and needs</p>
           </div>
-          <img src={play} />
+          <img src={play} alt="arrow"/>
         </div>
         <div className="main__descriptions">
-          <img src={code} />
+          <img src={code} alt="code"/>
           <div>
             <p>04</p>
             <h2>Software</h2>
             <p>I examine structures of your company to find the best way to improve its operations</p>
           </div>
-          <img src={play} />
+          <img src={play} alt="arrow"/>
         </div>
       </div>
     </div>
