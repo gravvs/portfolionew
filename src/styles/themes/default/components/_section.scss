@@ -32,7 +32,7 @@ body{
     margin-left: 2%;
     margin-bottom: -60px;
     margin-top: 4%;
-    height: 30%;
+    height: 220px;
     h4{
       font-weight: bold;
       font-size: 25px;
@@ -136,11 +136,70 @@ div{
 }
   }
 }
-.project__first{
-  width: 40%;
+.project{
+  margin-top: 100px;
+  h1{
+    text-align: center;
+    font-size: 55px;
+  }
+  &__header{
+    display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid white;
+width: 15%;
+border-radius: 25px;
+margin: auto;
+p{
+  text-align: center;
+}
+  }
+  &__button{
+    display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid white;
+width: 30%;
+border-radius: 25px;
+margin-right: 40px;
+p{
+  text-align: center;
+}
+  }
+  &__wrapper{
+    width: 65%;
+margin: 50px auto;
+display: flex;
+position: relative;
+height: 400px;
+  }
+  &__subwrapper-first{
+    width: 60%;
+    position: relative;
+z-index: 3;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+  }
+  &__subwrapper-second{
+    width: 50%;
+    position: absolute;
+z-index: 1;
+right: 0;
+top: 10px;
+  }
+  &__second-wrapper{
+    display: flex;
+flex-direction: column;
+align-items: flex-end;
+  }
+&__first,
+&__second,
+&__third{
   position: relative;
   img{
     width: 100%;
+    height: 100%;
     border-radius: 20px;
   }
   div{
@@ -151,4 +210,9 @@ div{
       color: black;
     }
   }
+}
+
+&__first{width: 100%;}
+&__second,
+&__third{width: 90%;}
 }
