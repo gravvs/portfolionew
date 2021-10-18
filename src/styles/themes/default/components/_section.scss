@@ -2,305 +2,338 @@ p,
 h1,
 h2,
 h3,
-h4{
+h4 {
   color: white;
 }
-body{
+body {
   background-image: url(../../../../picture/portfolio-back.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.app{
+.app {
   width: 100vw;
 }
-.header{
+.header {
   position: relative;
   height: 100vh;
-  h2{
+  h2 {
     margin: auto;
   }
-  &__sign{
+  &__sign {
     margin-left: 2%;
     margin-top: 5%;
-    h2{
+    h2 {
       font-size: 50px;
     }
-    h4{
+    h4 {
       font-size: 15px;
     }
   }
-  &__menu{
+  &__menu {
     margin-left: 2%;
     margin-bottom: -60px;
     margin-top: 4%;
     height: 220px;
-    h4{
+    h4 {
       font-weight: bold;
       font-size: 25px;
       cursor: pointer;
     }
-    p{
+    p {
       font-size: 15px;
       cursor: pointer;
     }
   }
-  &__header{
+  &__header {
     color: white;
     width: 100%;
     margin: auto;
     display: flex;
-justify-content: center;
-text-align: center;
-h2{
-  font-size: 30px;
-  margin-top: 5%;
-}
-span{
-  font-size: 80px;
-}
+    justify-content: center;
+    text-align: center;
+    h2 {
+      font-size: 30px;
+      margin-top: 5%;
+    }
+    span {
+      font-size: 80px;
+    }
   }
-  &__square{
+  &__square {
     border: 4px solid white;
-width: 20%;
-height: 35%;
-display: grid;
-text-align: center;
-float: right;
-right: 0;
-margin-right: 8%;
-margin-bottom: 50px;
-max-height: 340px;
-justify-content: center;
-align-content: center;
-p{
-  font-size: 60px;
-  font-weight: bold;
-  margin: auto;
-  font-family: -apple-system;
-}
+    width: 20%;
+    height: 35%;
+    display: grid;
+    text-align: center;
+    float: right;
+    right: 0;
+    margin-right: 8%;
+    margin-bottom: 50px;
+    max-height: 340px;
+    justify-content: center;
+    align-content: center;
+    p {
+      font-size: 60px;
+      font-weight: bold;
+      margin: auto;
+      font-family: -apple-system;
+    }
   }
 }
-.main{
+.main {
   height: 100vh;
   width: 100%;
-  &__categories{
+  &__categories {
     justify-content: center;
-display: flex;
-align-items: center;
-div{
-  width: 15%;
-  border-bottom: 2px solid rgb(179, 217, 245);
-  margin: 15px;
-}
+    display: flex;
+    align-items: center;
+    div {
+      width: 15%;
+      border-bottom: 2px solid rgb(179, 217, 245);
+      margin: 15px;
+    }
   }
-  &__header{
+  &__header {
     color: white;
     width: 100%;
     margin: auto;
     display: flex;
-justify-content: center;
-text-align: center;
-margin-top: 10%;
-h2{
-  font-size: 30px;
-}
-span{
-  font-size: 80px;
-}
+    justify-content: center;
+    text-align: center;
+    margin-top: 10%;
+    h2 {
+      font-size: 30px;
+    }
+    span {
+      font-size: 80px;
+    }
   }
-  &__service{
+  &__service {
     width: 50%;
-margin: auto;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-height: 30%;
-  }
-  &__descriptions{
+    margin: auto;
     display: flex;
-justify-content: space-around;
-align-items: center;
-width: 45%;
-height: 50%;
-border: 2px solid rgb(122, 122, 242);
-border-radius: 50px;
-margin: 15px 0;
-div{
-  width: 40%;
-  h2,
-  p{
-    margin: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 30%;
   }
-  p{
-    font-size: 12px;
+  &__descriptions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+    height: 50%;
+    border: 2px solid rgb(122, 122, 242);
+    border-radius: 50px;
+    margin: 15px 0;
+    div {
+      width: 40%;
+      h2,
+      p {
+        margin: 0;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
   }
 }
-  }
-}
-.project{
+.project {
   margin-top: 100px;
-  h1{
+  h1 {
     text-align: center;
     font-size: 55px;
   }
-  &__header{
+  &__header {
     display: flex;
-justify-content: center;
-align-items: center;
-border: 1px solid white;
-width: 15%;
-border-radius: 25px;
-margin: auto;
-p{
-  text-align: center;
-}
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    width: 15%;
+    border-radius: 25px;
+    margin: auto;
+    p {
+      text-align: center;
+    }
   }
-  &__button{
+  &__button {
     display: flex;
-justify-content: center;
-align-items: center;
-border: 1px solid white;
-width: 30%;
-border-radius: 25px;
-margin-right: 40px;
-margin-top: 10px;
-p{
-  text-align: center;
-}
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    width: 30%;
+    border-radius: 25px;
+    margin-right: 40px;
+    margin-top: 10px;
+    p {
+      text-align: center;
+    }
   }
-  &__wrapper{
+  &__wrapper {
     width: 65%;
-margin: 50px auto;
-display: flex;
-position: relative;
-height: 70vh;
+    margin: 50px auto;
+    display: flex;
+    position: relative;
+    height: 70vh;
   }
-  &__subwrapper-first{
+  &__subwrapper-first {
     width: 60%;
     position: relative;
     top: 10%;
-z-index: 3;
-display: flex;
-flex-direction: column;
-align-items: flex-end;
-.project__button{
-  margin-right: 10%;
-}
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .project__button {
+      margin-right: 10%;
+    }
   }
-  &__subwrapper-second{
+  &__subwrapper-second {
     width: 50%;
     position: absolute;
-z-index: 1;
-right: 0;
-top: 10px;
+    z-index: 1;
+    right: 0;
+    top: 10px;
   }
-  &__second-wrapper{
+  &__second-wrapper {
     display: flex;
-flex-direction: column;
-align-items: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
   }
-&__first,
-&__second,
-&__third{
-  position: relative;
-  img{
+  &__first,
+  &__second,
+  &__third {
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+    }
+    div {
+      position: absolute;
+      top: 15%;
+      p {
+        font-family: -apple-system;
+        font-size: 16px;
+      }
+    }
+  }
+  &__first {
     width: 100%;
-    height: 100%;
-    border-radius: 20px;
-  }
-  div{
-    position: absolute;
-    top: 15%;
-    p{
-      font-family: -apple-system;
-      font-size: 16px;
+    div {
+      left: 1%;
     }
   }
-}
-&__first{
-  width: 100%;
-  div{
-    left: 1%;
-  }
-}
-&__second,
-&__third{
-  width: 90%;
-  div{
-    right: 1%;
-    p{
-      color: black;
+  &__second,
+  &__third {
+    width: 90%;
+    div {
+      right: 1%;
+      p {
+        color: black;
+      }
     }
   }
+  &__third {
+    margin-top: 10px;
+  }
 }
-&__third{
-  margin-top: 10px;
-}
-}
-.technology{
+.technology {
   width: 100%;
   height: 100vh;
   display: grid;
   background-color: rgb(0, 0, 61);
-  h2{
+  h2 {
     font-size: 55px;
-text-align: center;
-align-self: center;
+    text-align: center;
+    align-self: center;
   }
-  &__paragraph{
+  &__paragraph {
     display: grid;
     justify-content: center;
-    p{
-    font-size: 20px;
+    p {
+      font-size: 20px;
     }
   }
-  &__tools{
+  &__tools {
     display: flex;
-justify-content: center;
-    img{
+    justify-content: center;
+    img {
       width: 32px;
     }
   }
-  &__container{
+  &__container {
     margin: 5px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    div{
+    div {
       width: 60px;
-height: 60px;
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: white;
-border-radius: 5px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      border-radius: 5px;
     }
-    p{
+    p {
       text-align: center;
       font-size: 12px;
     }
   }
 }
-.footer{
-  display: flex;
-justify-content: center;
-align-items: center;
-p{
-  cursor: pointer;
+.client {
+  h2,
+  h3 {
+    text-align: center;
+    font-size: 55px;
+  }
+  &__slideshow {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 500px;
+  }
+  &__slideshowSlider {
+    white-space: nowrap;
+    transition: ease 1000ms;
+  }
+  &__opinion {
+    width: 99%;
+    height: 20vh;
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 35px;
+    display: inline-block;
+    span img {
+      transform: rotate(180deg);
+      float: right;
+    }
+  }
+  &__text {
+    p {
+      white-space: normal;
+    }
+  }
 }
-  &__sign{
-    h2{
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    cursor: pointer;
+  }
+  &__sign {
+    h2 {
       font-size: 50px;
     }
-    h4{
+    h4 {
       font-size: 15px;
     }
   }
-  div{
+  div {
     margin: 0 30px;
   }
-  &__img{
-    img{
+  &__img {
+    img {
       width: 45px;
       height: 45px;
       margin: 0 10px;
@@ -308,4 +341,3 @@ p{
     }
   }
 }
-// #B500AA

@@ -4,6 +4,7 @@ import Main from "./components/Main";
 import Projects from './components/Projects';
 import Technology from './components/Technology';
 import Footer from './components/Footer';
+import Client from './components/Client';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Main />
       <Projects />
       <Technology />
+      <Client />
       <Footer />
     </div>
   );
