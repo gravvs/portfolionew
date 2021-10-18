@@ -8,6 +8,8 @@ import react from "../picture/react.png";
 import sass from "../picture/sass.png";
 import sql from "../picture/sql-server.png";
 import typescript from "../picture/typescript.png";
+import git from "../picture/git.png";
+import api from "../picture/api.png";
 
 export default function Technology() {
   return (
@@ -31,40 +33,48 @@ export default function Technology() {
       </div>
       <div className="technology__tools">
         <div className="technology__container">
-          <div><img src={html} /></div>
+          <div><img src={html} alt="html"/></div>
           <p>HTML</p>
         </div>
         <div className="technology__container">
-          <div><img src={css} /></div>
+          <div><img src={css} alt="css"/></div>
           <p>CSS</p>
         </div>
         <div className="technology__container">
-          <div><img src={sass} /></div>
+          <div><img src={sass} alt="sass"/></div>
           <p>SASS</p>
         </div>
         <div className="technology__container">
-          <div><img src={javascript} /></div>
-          <p>JAVA<br/>SCRIPT</p>
+          <div><img src={javascript} alt="javascript"/></div>
+          <p>JAVASCRIPT</p>
         </div>
         <div className="technology__container">
-          <div><img src={react} /></div>
+          <div><img src={react} alt="react"/></div>
           <p>REACT</p>
         </div>
         <div className="technology__container">
-          <div><img src={gatsby} /></div>
+          <div><img src={gatsby} alt="gatsby"/></div>
           <p>GATSBY</p>
         </div>
         <div className="technology__container">
-          <div><img src={typescript} /></div>
+          <div><img src={typescript} alt="typescript"/></div>
           <p>TYPESCRIPT</p>
         </div>
         <div className="technology__container">
-          <div><img src={sql} /></div>
+          <div><img src={sql} alt="sql"/></div>
           <p>SQL</p>
         </div>
         <div className="technology__container">
-          <div><img src={postman} /></div>
+          <div><img src={postman} alt="postman"/></div>
           <p>POSTMAN</p>
+        </div>
+        <div className="technology__container">
+          <div><img src={git} alt="git"/></div>
+          <p>GIT</p>
+        </div>
+        <div className="technology__container">
+          <div><img src={api} alt="git"/></div>
+          <p>REST</p>
         </div>
       </div>
     </div>

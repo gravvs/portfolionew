@@ -15,11 +15,11 @@ export default function Projects() {
       <div className="project__wrapper">
         <div className="project__subwrapper-first">
           <div className="project__first">
-            <img src={first} alt="portfolio" />
-            <div>
-              <p>First portfolio</p>
-              <p>|Website</p>
-            </div>
+              <img src={quiz} alt="quiz" />
+              <div>
+                <p>Quiz with categories</p>
+                <p>| Quiz app</p>
+              </div>
           </div>
           <div className="project__button">
             <p>See more</p>
@@ -29,11 +29,11 @@ export default function Projects() {
         <div className="project__subwrapper-second">
           <div className="project__second-wrapper">
             <div className="project__second">
-              <img src={quiz} alt="quiz" />
-              <div>
-                <p>Quiz with categories</p>
-                <p>|Quiz app</p>
-              </div>
+            <img src={first} alt="portfolio" />
+            <div>
+              <p>First portfolio</p>
+              <p>| Website</p>
+            </div>
             </div>
             <div className="project__button">
               <p>See more</p>
@@ -45,7 +45,7 @@ export default function Projects() {
               <img src={booking} alt="booking" />
               <div>
                 <p>Clone of booking</p>
-                <p>|Static website</p>
+                <p>| Static website</p>
               </div>
             </div>
             <div className="project__button">
