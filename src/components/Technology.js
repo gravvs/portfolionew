@@ -10,72 +10,47 @@ import sql from "../picture/sql-server.png";
 import typescript from "../picture/typescript.png";
 import git from "../picture/git.png";
 import api from "../picture/api.png";
+import Head from "./Head";
 
 export default function Technology() {
+  const technology = [
+    { id: 1, img: html, desc: "HTML" },
+    { id: 2, img: css, desc: "CSS" },
+    { id: 3, img: sass, desc: "SASS" },
+    { id: 4, img: javascript, desc: "JAVASCRIPT" },
+    { id: 5, img: react, desc: "REACT" },
+    { id: 6, img: gatsby, desc: "GATSBY" },
+    { id: 7, img: typescript, desc: "TYPESCRIPT" },
+    { id: 8, img: sql, desc: "SQL" },
+    { id: 9, img: postman, desc: "POSTMAN" },
+    { id: 10, img: git, desc: "GIT" },
+    { id: 11, img: api, desc: "REST" },
+  ];
+
   return (
     <div className="technology">
-      <h2>
-        Technology
-        <br />
-        by all means
-      </h2>
+      <Head el1="Technology" el3="by all means"/>
       <div className="technology__paragraph">
-      <p >
-        I have essential experience to use the most powerfull developers'
-        <br />
-        tools on the market. I want to make sure that the solution I prepare
-        <br />
-        for the clients is the one that will make a difference and will enrich
-        <br />
-        your facilities.
-      </p>
-      <p >I can prognose the results and test efficacy of the methods used</p>
+        <p>
+          I have essential experience to use the most powerfull developers'
+          <br />
+          tools on the market. I want to make sure that the solution I prepare
+          <br />
+          for the clients is the one that will make a difference and will enrich
+          <br />
+          your facilities.
+        </p>
+        <p>I can prognose the results and test efficacy of the methods used</p>
       </div>
       <div className="technology__tools">
-        <div className="technology__container">
-          <div><img src={html} alt="html"/></div>
-          <p>HTML</p>
-        </div>
-        <div className="technology__container">
-          <div><img src={css} alt="css"/></div>
-          <p>CSS</p>
-        </div>
-        <div className="technology__container">
-          <div><img src={sass} alt="sass"/></div>
-          <p>SASS</p>
-        </div>
-        <div className="technology__container">
-          <div><img src={javascript} alt="javascript"/></div>
-          <p>JAVASCRIPT</p>
-        </div>
-        <div className="technology__container">
-          <div><img src={react} alt="react"/></div>
-          <p>REACT</p>
-        </div>
-        <div className="technology__container">
-          <div><img src={gatsby} alt="gatsby"/></div>
-          <p>GATSBY</p>
-        </div>
-        <div className="technology__container">
-          <div><img src={typescript} alt="typescript"/></div>
-          <p>TYPESCRIPT</p>
-        </div>
-        <div className="technology__container">
-          <div><img src={sql} alt="sql"/></div>
-          <p>SQL</p>
-        </div>
-        <div className="technology__container">
-          <div><img src={postman} alt="postman"/></div>
-          <p>POSTMAN</p>
-        </div>
-        <div className="technology__container">
-          <div><img src={git} alt="git"/></div>
-          <p>GIT</p>
-        </div>
-        <div className="technology__container">
-          <div><img src={api} alt="git"/></div>
-          <p>REST</p>
-        </div>
+        {technology.map((el) => (
+          <div className="technology__container" key={el.id}>
+            <div>
+              <img src={el.img} alt={el.desc} />
+            </div>
+            <p>{el.desc}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -1,9 +1,9 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import play from "../picture/play.png";
 import angled from "../picture/angled-cuts.png";
 
 export default function Client() {
-const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(0);
 
   const backendData = [
     {
@@ -24,19 +24,19 @@ const [index, setIndex] = useState(0);
       <h3>Clients'</h3>
       <h2>experience</h2>
       <div className="client__slideshow">
-      <div className="client__slideshowSlider">
-        {backendData.map((el) => (
-          <div key={el.id} className="client__opinion">
-            <img src={angled} alt="qoutation marks" />
-            <div className="client__text">
-            <p>{el.description}</p>
-            </div>
-            <span>
+        <div className="client__slideshowSlider">
+          {backendData.map((el) => (
+            <div key={el.id} className="client__opinion">
               <img src={angled} alt="qoutation marks" />
-            </span>
-          </div>
-        ))}
-      </div>
+              <div className="client__text">
+                <p>{el.description}</p>
+              </div>
+              <span>
+                <img src={angled} alt="qoutation marks" />
+              </span>
+            </div>
+          ))}
+        </div>
       </div>
       <div>
         <p>Contact me</p>

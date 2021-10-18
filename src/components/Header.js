@@ -1,4 +1,5 @@
 import React,{ useState } from "react";
+import Head from "./Head";
 
 export default function Header() {
   const [active, setActive] = useState(true)
@@ -28,14 +29,7 @@ export default function Header() {
         <p>Design</p>
         <p>Evolve</p>
       </div>
-      <div className="header__header">
-        <h2>
-          My ideology is to engage my best skills and technology <br /> in the
-          process of design
-          <br />
-          <span>to make your ideas evolve</span>
-        </h2>
-      </div>
+      <Head el1="My ideology is to engage my best skills and technology" el2="in theprocess of design" el3="to make your ideas evolve"/>
     </div>
   );
 }

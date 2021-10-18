@@ -5,6 +5,7 @@ import Projects from './components/Projects';
 import Technology from './components/Technology';
 import Footer from './components/Footer';
 import Client from './components/Client';
+import Categories from './components/Categories';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <div className="app">
       <Header />
       <Main />
+      <Categories />
       <Projects />
       <Technology />
       <Client />
