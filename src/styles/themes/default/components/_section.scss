@@ -10,6 +10,24 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+button {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid white;
+  width: 15%;
+  border-radius: 25px;
+  margin: auto;
+  cursor: pointer;
+  p {
+    text-align: center;
+    white-space: nowrap;
+  }
+}
+p{
+  font-family: -apple-system;
+}
 .app {
   width: 100vw;
 }
@@ -34,6 +52,10 @@ body {
     margin-bottom: -60px;
     margin-top: 4%;
     height: 220px;
+    width: 7%;
+    div{
+      width: 100%;
+    }
     h4 {
       font-weight: bold;
       font-size: 25px;
@@ -76,7 +98,6 @@ body {
       font-size: 60px;
       font-weight: bold;
       margin: auto;
-      font-family: -apple-system;
     }
   }
 }
@@ -142,37 +163,15 @@ body {
     text-align: center;
     font-size: 55px;
   }
-  &__header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid white;
-    width: 15%;
-    border-radius: 25px;
-    margin: auto;
-    p {
-      text-align: center;
-    }
-  }
-  &__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid white;
-    width: 30%;
-    border-radius: 25px;
-    margin-right: 40px;
-    margin-top: 10px;
-    p {
-      text-align: center;
-    }
-  }
   &__wrapper {
     width: 65%;
     margin: 50px auto;
     display: flex;
     position: relative;
     height: 70vh;
+    button{
+      margin: 15px 88px 5px 0;
+    }
   }
   &__subwrapper-first {
     width: 60%;
@@ -201,7 +200,7 @@ body {
   &__first,
   &__second,
   &__third {
-    @include firstsecondthird
+    @include firstsecondthird;
   }
   &__first {
     width: 100%;
@@ -273,6 +272,10 @@ body {
     text-align: center;
     font-size: 55px;
   }
+  button{
+    width: 10%;
+    margin-left: 50%;
+  }
   &__slideshow {
     margin: 0 auto;
     overflow: hidden;
@@ -284,11 +287,17 @@ body {
   }
   &__opinion {
     width: 99%;
-    height: 20vh;
-    margin-right: 10px;
-    border: 1px solid white;
+    height: 220px;
+    margin-right: 5px;
+    border: 2px solid white;
     border-radius: 35px;
     display: inline-block;
+    img{
+      margin: 0 10px;
+    }
+    div{
+      margin: 0 10px;
+    }
     span img {
       transform: rotate(180deg);
       float: right;
@@ -326,4 +335,10 @@ body {
       cursor: pointer;
     }
   }
+}
+.websites__wrapper,
+.applications__wrapper{
+  width: 70%;
+  margin: auto;
+  display: flex;
 }

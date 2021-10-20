@@ -1,5 +1,5 @@
 import React,{ useState } from "react";
-import Head from "./Head";
+import {Head} from "./Common";
 
 export default function Header() {
   const [active, setActive] = useState(true)

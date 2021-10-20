@@ -10,7 +10,7 @@ import sql from "../picture/sql-server.png";
 import typescript from "../picture/typescript.png";
 import git from "../picture/git.png";
 import api from "../picture/api.png";
-import Head from "./Head";
+import {Head} from "./Common";
 
 export default function Technology() {
   const technology = [

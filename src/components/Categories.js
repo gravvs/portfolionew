@@ -4,7 +4,7 @@ import code from "../picture/code.png";
 import mobile from "../picture/mobile-app.png";
 import play from "../picture/play.png";
 import website from "../picture/website-design.png";
-import Head from './Head';
+import {Head} from './Common';
 
 export default function Categories() {
 

@@ -1,17 +1,14 @@
 import React from "react";
-import play from "../picture/play.png";
 import first from "../picture/first-portfolio.png";
 import quiz from "../picture/quiz.png";
 import booking from "../picture/booking.png";
+import { Button } from "./Common";
 
 export default function Projects() {
   return (
     <div className="project">
       <h1>My projects</h1>
-      <div className="project__header">
-        <p>See all projects</p>
-        <img src={play} alt="arrow" />
-      </div>
+      <Button desc="See all projects"/>
       <div className="project__wrapper">
         <div className="project__subwrapper-first">
           <div className="project__first">
@@ -21,10 +18,7 @@ export default function Projects() {
               <p>| Quiz app</p>
             </div>
           </div>
-          <div className="project__button">
-            <p>See more</p>
-            <img src={play} alt="arrow" />
-          </div>
+          <Button desc="See more"/>
         </div>
         <div className="project__subwrapper-second">
           <div className="project__second-wrapper">
@@ -35,10 +29,7 @@ export default function Projects() {
                 <p>| Website</p>
               </div>
             </div>
-            <div className="project__button">
-              <p>See more</p>
-              <img src={play} alt="arrow" />
-            </div>
+            <Button desc="See more"/>
           </div>
           <div className="project__second-wrapper">
             <div className="project__third">
@@ -48,10 +39,7 @@ export default function Projects() {
                 <p>| Static website</p>
               </div>
             </div>
-            <div className="project__button">
-              <p>See more</p>
-              <img src={play} alt="arrow" />
-            </div>
+            <Button desc="See more"/>
           </div>
         </div>
       </div>
