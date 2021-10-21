@@ -25,7 +25,7 @@ button {
     white-space: nowrap;
   }
 }
-p{
+p {
   font-family: -apple-system;
 }
 .app {
@@ -53,7 +53,7 @@ p{
     margin-top: 4%;
     height: 220px;
     width: 7%;
-    div{
+    div {
       width: 100%;
     }
     h4 {
@@ -169,7 +169,7 @@ p{
     display: flex;
     position: relative;
     height: 70vh;
-    button{
+    button {
       margin: 15px 88px 5px 0;
     }
   }
@@ -272,7 +272,7 @@ p{
     text-align: center;
     font-size: 55px;
   }
-  button{
+  button {
     width: 10%;
     margin-left: 50%;
   }
@@ -292,10 +292,10 @@ p{
     border: 2px solid white;
     border-radius: 35px;
     display: inline-block;
-    img{
+    img {
       margin: 0 10px;
     }
-    div{
+    div {
       margin: 0 10px;
     }
     span img {
@@ -336,9 +336,104 @@ p{
     }
   }
 }
-.websites__wrapper,
-.applications__wrapper{
-  width: 70%;
-  margin: auto;
-  display: flex;
+.websites,
+.applications,
+.ux,
+.software {
+  &__wrapper {
+    width: 70%;
+    margin: auto;
+  }
+  &__subwrapper {
+    display: flex;
+  }
+  &__mobile {
+    position: relative;
+    overflow: hidden;
+  }
+  &__iphone {
+    position: relative;
+    z-index: 2;
+  }
+  &__projects {
+    width: 84%;
+    height: 92%;
+    position: absolute;
+    top: 3%;
+    left: 9%;
+    transition: 1000ms ease;
+    img {
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+  }
+  &__content{
+    width: 60%;
+    white-space: nowrap;
+overflow: hidden;
+div{
+  height: 100%;
+width: 100%;
+display: inline-block;
+transition: ease 1000ms;
+position: relative;
+h3,
+p{
+  text-align: center;
+}
+button{
+  position: absolute;
+bottom: 15%;
+left: 42%;
+}
+}
+  }
+}
+.websites {
+  &__projects {
+    width: 98%;
+    height: 51%;
+    position: absolute;
+    top: 8%;
+    left: 1%;
+  }
+  &__content{
+    width: 51%;
+  }
+}
+.slideshowDot {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+  cursor: pointer;
+}
+.slideshowDot.active {
+  background-color: $c-flirt;
+}
+.leftbuton {
+  
+  &__wrapper {
+    width: 100px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border-radius: 70px;
+    margin: auto;
+  }
+  &__subwrapper {
+    transform: rotate(90deg);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    img:not(:nth-child(2)) {
+      transform: rotate(180deg);
+    }
+    img{
+    cursor: pointer;
+  }
+  }
 }

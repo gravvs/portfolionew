@@ -23,3 +23,13 @@ export function Button(props) {
     </button>
   );
 }
+export function LeftButton(props) {
+  return (
+    <div className="leftbuton__wrapper">
+      <div className="leftbuton__subwrapper">
+        <img src={play} alt="arrow" onClick={props.nextSlide}/>
+        <img src={play} alt="arrow" onClick={props.nextSlide}/>
+      </div>
+    </div>
+  );
+}

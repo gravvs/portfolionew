@@ -1,6 +1,5 @@
-import React, {useState} from "react";
-import iphone from '../picture/iphone2.png'
-import { Button } from "./Common";
+import React, { useState } from "react";
+import uxui from "../picture/UI-UX.jpg";
 
 const ux = [
   {
@@ -11,16 +10,15 @@ const ux = [
 ];
 
 export default function Ux() {
-    const [index, setIndex] = useState(0)
+  const [index, setIndex] = useState(0);
   return (
-    <div>
+    <div className="ux__wrapper">
+      <div>kropki</div>
       <div>
-        <div>kropki</div>
-        <img src={iphone} alt="iphone" />
+        <img src={uxui} alt="iphone" />
       </div>
       <div>
         content
-        <Button />
       </div>
       <div>button right</div>
     </div>

@@ -1,24 +1,24 @@
-import React,{useState} from "react";
-import iphone from '../picture/iphone2.png'
-import { Button } from "./Common";
+import React, { useState } from "react";
+import software2 from "../picture/software2.jpg";
 
 export default function Software() {
-    const [index, setIndex] = useState(0)
+  const [index, setIndex] = useState(0);
 
-    const software = [
-  {id: 1, header: "Welcome in the future", desc: "Visit this website in couple days to see Software"}
-]
+  const software = [
+    {
+      id: 1,
+      header: "Welcome in the future",
+      desc: "Visit this website in couple days to see Software",
+    },
+  ];
 
   return (
-    <div>
+    <div className="software__wrapper">
+      <div>kropki</div>
       <div>
-        <div>kropki</div>
-        <img src={iphone} alt="iphone" />
+        <img src={software2} alt="iphone" />
       </div>
-      <div>
-        content
-        <Button />
-      </div>
+      <div>content</div>
       <div>button right</div>
     </div>
   );
