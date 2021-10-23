@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import angled from "../picture/angled-cuts.png";
 import {Head, Button} from "./Common";
+import Form from "./Form";
 
 export default function Client() {
   const [index, setIndex] = useState(0);
+  const [show, setShow] = useState(false);
   const timeoutRef = useRef();
 
   function resetTimeout() {
@@ -26,28 +28,28 @@ export default function Client() {
         "Very professional approach to the subject. Fast and precise work execution",
     },
   ];
-useEffect(() => {
-    resetTimeout();
-    timeoutRef.current = setTimeout(
-      () =>
-        setIndex((prevIndex) =>
-          prevIndex === backendData.length - 1 ? 0 : prevIndex + 1
-        ),
-      5000
-    );
+// useEffect(() => {
+//     resetTimeout();
+//     timeoutRef.current = setTimeout(
+//       () =>
+//         setIndex((prevIndex) =>
+//           prevIndex === backendData.length - 1 ? 0 : prevIndex + 1
+//         ),
+//       5000
+//     );
 
-    return () => {
-      resetTimeout();
-    };
-  }, [index]);
+//     return () => {
+//       resetTimeout();
+//     };
+//   }, [index]);
 
   return (
     <div className="client">
-      <Head el1="Clients'" el3="experience"/>
+      {show ? <Form show={show} setShow={setShow}/> : <div><Head el1="Clients'" el3="experience"/>
       <div className="client__slideshow">
-        <div className="client__slideshowSlider">
+        <div className="client__slideshowSlider" style={{ transform: `translate3d(${-index * 101}%, 0, 0)` }}>
           {backendData.map((el) => (
-            <div key={el.id} className="client__opinion">
+            <div key={el.id} className="client__opinion" >
               <img src={angled} alt="qoutation marks" />
               <div className="client__text">
                 <p>{el.description}</p>
@@ -59,10 +61,11 @@ useEffect(() => {
           ))}
         </div>
       </div>
-      <Button desc="Contact me"/>
+      <div onClick={()=>{setShow(!show)}}><Button desc="Contact me" /></div>
+      </div>
+      }
     </div>
   );
 }
 
 
-// style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
