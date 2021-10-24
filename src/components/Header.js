@@ -1,7 +1,7 @@
 import React,{ useState } from "react";
-import {Head} from "./Common";
+import {Head, scrollToRef} from "./Common";
 
-export default function Header() {
+export default function Header(props) {
   const [active, setActive] = useState(true)
   
   const handleActive = () => {
@@ -18,11 +18,10 @@ export default function Header() {
       <div className="header__menu">
         <h4 onClick={()=>{handleActive()}}>Menu &#x022BD;</h4>
         {active && <div>
-          <p>My portfolio</p>
-          <p>Service</p>
-          <p>Awards</p>
-          <p>Technology</p>
-          <p>Contact Me</p>
+          <p onClick={()=>scrollToRef(props.refMain)}>My portfolio</p>
+          <p onClick={()=>scrollToRef(props.refCategories)}>Service</p>
+          <p onClick={()=>scrollToRef(props.refTech)}>Technology</p>
+          <p onClick={()=>scrollToRef(props.refContact)}>Contact Me</p>
         </div>}
       </div>
       <div className="header__square">

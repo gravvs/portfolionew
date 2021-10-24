@@ -3,7 +3,7 @@ import angled from "../picture/angled-cuts.png";
 import {Head, Button} from "./Common";
 import Form from "./Form";
 
-export default function Client() {
+export default function Client(props) {
   const [index, setIndex] = useState(0);
   const [show, setShow] = useState(false);
   const timeoutRef = useRef();
@@ -44,7 +44,7 @@ export default function Client() {
 //   }, [index]);
 
   return (
-    <div className="client">
+    <div className="client" ref={props.refContact}>
       {show ? <Form show={show} setShow={setShow}/> : <div><Head el1="Clients'" el3="experience"/>
       <div className="client__slideshow">
         <div className="client__slideshowSlider" style={{ transform: `translate3d(${-index * 101}%, 0, 0)` }}>

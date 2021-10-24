@@ -10,14 +10,17 @@ import { useRef } from 'react';
 
 function App() {
   const refMain = useRef(null);
+  const refCategories = useRef(null);
+  const refTech = useRef(null);
+  const refContact = useRef(null);
   return (
     <div className="app">
-      <Header />
+      <Header {...{refMain,refCategories,refTech,refContact}}/>
       <Main refMain={refMain}/>
-      <Categories />
+      <Categories refCategories={refCategories}/>
       <Projects refMain={refMain}/>
-      <Technology />
-      <Client />
+      <Technology refTech={refTech}/>
+      <Client refContact={refContact}/>
       <Footer />
     </div>
   );

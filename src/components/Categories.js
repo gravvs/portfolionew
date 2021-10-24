@@ -6,7 +6,7 @@ import play from "../picture/play.png";
 import website from "../picture/website-design.png";
 import { Head } from "./Common";
 
-export default function Categories() {
+export default function Categories(props) {
     const [number, setNumber] = useState()
   const content = [
     {
@@ -42,7 +42,7 @@ export default function Categories() {
   ];
 
   return (
-    <div>
+    <div ref={props.refCategories}>
       <Head
         el1="As a professional, i can provide a wide range of services"
         el2="to make sure you have"
