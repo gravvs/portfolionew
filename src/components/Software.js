@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import software2 from "../picture/software3.jpg";
 import { LeftButton } from './Common';
 
 export default function Software() {
-  const [index, setIndex] = useState(0);
+  // const [index, setIndex] = useState(0);
 
   const software = [
     {

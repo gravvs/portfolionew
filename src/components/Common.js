@@ -17,7 +17,7 @@ export function Head(props) {
 
 export function Button(props) {
   return (
-    <button>
+    <button onClick={props.action}>
       <a href={props.href} target="__blank">
       <p>{props.desc}</p></a>
       <img src={play} alt="arrow" />

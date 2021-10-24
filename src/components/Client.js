@@ -61,7 +61,7 @@ export default function Client(props) {
           ))}
         </div>
       </div>
-      <div onClick={()=>{setShow(!show)}}><Button desc="Contact me" /></div>
+      <Button desc="Contact me" action={()=>setShow(!show)}/>
       </div>
       }
     </div>

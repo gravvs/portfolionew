@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import atom from "../picture/atom.png";
 import code from "../picture/code.png";
 import mobile from "../picture/mobile-app.png";
@@ -7,7 +7,6 @@ import website from "../picture/website-design.png";
 import { Head } from "./Common";
 
 export default function Categories(props) {
-    const [number, setNumber] = useState()
   const content = [
     {
       id: 0,
@@ -50,7 +49,7 @@ export default function Categories(props) {
       />
       <div className="main__service">
         {content.map((el) => (
-          <div className={`main__descriptions${el.id === number ? " active" : ""}`} key={el.id}>
+          <div className='main__descriptions' key={el.id}>
             <img src={el.img} alt="technology" />
             <div>
               <p>{el.number}</p>

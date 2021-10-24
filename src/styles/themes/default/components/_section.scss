@@ -49,6 +49,13 @@
     }
     span {
       font-size: 80px;
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.9486169467787114) 0%,
+        rgba(255, 255, 255, 1) 60%
+      );
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
   &__square {
@@ -81,18 +88,18 @@
       width: 15%;
       border-bottom: 2px solid rgb(118, 118, 226);
       margin: 15px;
-      a{
+      a {
         text-decoration: none;
       }
-      p{
-      cursor: pointer;
-      color: rgb(118, 118, 226);
+      p {
+        cursor: pointer;
+        color: rgb(118, 118, 226);
       }
     }
   }
-  &__categories div.active{
+  &__categories div.active {
     border-bottom: 2px solid rgb(179, 217, 245);
-    p{
+    p {
       color: rgb(179, 217, 245);
     }
   }
@@ -142,11 +149,11 @@
     }
   }
 }
-.main__descriptions.active{
+.main__descriptions.active {
   width: 100%;
   height: 100%;
 }
-.main__descriptions.false{
+.main__descriptions.false {
   display: none;
 }
 .project {
@@ -197,6 +204,11 @@
   }
   &__first {
     width: 100%;
+    img {
+      -webkit-box-shadow: 3px 4px 8px 0px rgba(0, 0, 0, 1);
+      -moz-box-shadow: 3px 4px 8px 0px rgba(0, 0, 0, 1);
+      box-shadow: 3px 4px 8px 0px rgba(0, 0, 0, 1);
+    }
     div {
       left: 1%;
     }
@@ -365,34 +377,34 @@
       z-index: 1;
     }
   }
-  &__content{
+  &__content {
     width: 51%;
     white-space: nowrap;
-overflow: hidden;
-div{
-  height: 100%;
-width: 100%;
-display: inline-block;
-transition: ease 1000ms;
-position: relative;
-h3,
-p{
-  text-align: center;
-}
-button{
-  position: absolute;
-bottom: 0;
-left: 42%;
-width: 20%;
-}
-}
+    overflow: hidden;
+    div {
+      height: 100%;
+      width: 100%;
+      display: inline-block;
+      transition: ease 1000ms;
+      position: relative;
+      h3,
+      p {
+        text-align: center;
+      }
+      button {
+        position: absolute;
+        bottom: 0;
+        left: 42%;
+        width: 20%;
+      }
+    }
   }
 }
-.ux__mobile{
-border-radius: 50px;
- img{
-  width: 100%;
-}
+.ux__mobile {
+  border-radius: 50px;
+  img {
+    width: 100%;
+  }
 }
 .applications {
   &__projects {
@@ -402,7 +414,7 @@ border-radius: 50px;
     top: 2%;
     left: 6%;
   }
-  &__mobile{
+  &__mobile {
     height: 600px;
   }
 }
@@ -435,41 +447,41 @@ border-radius: 50px;
     img:not(:nth-child(2)) {
       transform: rotate(180deg);
     }
-    img{
-    cursor: pointer;
-  }
+    img {
+      cursor: pointer;
+    }
   }
 }
-.contact{
+.contact {
   margin: auto;
-width: 50%;
-form{
-  display: grid;
-  label{
-    color: white;
-text-align: center;
+  width: 50%;
+  form {
+    display: grid;
+    label {
+      color: white;
+      text-align: center;
+    }
+    input,
+    textarea {
+      width: 50%;
+      margin: 15px auto;
+      height: 50px;
+      border-radius: 10px;
+    }
+    textarea {
+      height: 150px;
+    }
+    button {
+      width: 20%;
+      color: white;
+      margin-top: 15px;
+      margin-left: auto;
+      height: 50px;
+    }
+    p {
+      margin: 0 0 0 10%;
+      font-size: 40px;
+      cursor: pointer;
+    }
   }
-  input,
-  textarea{
-    width: 50%;
-margin: 15px auto;
-height: 50px;
-border-radius: 10px;
-  }
-  textarea{
-    height: 150px;
-  }
-  button{
-    width: 20%;
-color: white;
-margin-top: 15px;
-margin-left: auto;
-height: 50px;
-  }
-  p{
-    margin: 0 0 0 10%;
-font-size: 40px;
-cursor: pointer;
-  }
-}
 }

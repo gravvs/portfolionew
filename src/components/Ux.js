@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import uxui from "../picture/UI-UX.jpg";
 import { LeftButton } from "./Common";
 
@@ -11,7 +11,7 @@ const ux = [
 ];
 
 export default function Ux() {
-  const [index, setIndex] = useState(0);
+  // const [index, setIndex] = useState(0);
   return (
     <div className="ux__wrapper">
       <div className="ux__subwrapper">
