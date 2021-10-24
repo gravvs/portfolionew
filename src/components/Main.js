@@ -12,12 +12,12 @@ const categories = [
   { id: 3, desc: "Software", where: "/software" },
 ];
 
-export default function Main() {
+export default function Main(props) {
   const [number, setNumber] = useState(2)
 
   return (
     <Router>
-    <div className="main">
+    <div className="main" ref={props.refMain}>
       <div className="main__categories">
         {categories.map((el) => (
           

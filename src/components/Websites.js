@@ -11,6 +11,7 @@ const websites = [
     desc: "It was my first portfolio",
     url: "https://portfolio-czenczek.netlify.app",
     img: portfolio,
+    link: "https://portfolio-czenczek.netlify.app"
   },
   {
     id: 1,
@@ -18,6 +19,7 @@ const websites = [
     desc: "Check yoursefl if you can see the diference",
     url: "https://czenczek.netlify.app",
     img: booking,
+    link: "https://czenczek.netlify.app"
   },
 ];
 

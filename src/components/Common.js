@@ -18,11 +18,14 @@ export function Head(props) {
 export function Button(props) {
   return (
     <button>
-      <p>{props.desc}</p>
+      <a href={props.href} target="__blank">
+      <p>{props.desc}</p></a>
       <img src={play} alt="arrow" />
     </button>
   );
 }
+
+export function scrollToRef (ref) { window.scrollTo(0, ref.current.offsetTop)};
 
 export function LeftButton(props) {
   return (
@@ -71,7 +74,7 @@ export function CategorieProject(props){
           <div key={el.id} style={{ transform: `translate3d(${-props.index * 100}%, 0, 0)` }}>
             <h3>{el.header}</h3>
             <p>{el.desc}</p>
-            <Button desc="Visit this site" />
+            <a href={el.link} target="__blank"><Button desc="Visit this site" /></a>
           </div>
         ))}
       </div>

@@ -13,6 +13,7 @@ export default function Applications() {
       desc: "Choose categorie and test yourself in many questions",
       url: "https://quiz-czenczek.netlify.app",
       img: quizapp,
+      link: "https://quiz-czenczek.netlify.app"
     },
   ];
 

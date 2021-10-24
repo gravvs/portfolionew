@@ -6,15 +6,16 @@ import Technology from './components/Technology';
 import Footer from './components/Footer';
 import Client from './components/Client';
 import Categories from './components/Categories';
-
+import { useRef } from 'react';
 
 function App() {
+  const refMain = useRef(null);
   return (
     <div className="app">
       <Header />
-      <Main />
+      <Main refMain={refMain}/>
       <Categories />
-      <Projects />
+      <Projects refMain={refMain}/>
       <Technology />
       <Client />
       <Footer />
