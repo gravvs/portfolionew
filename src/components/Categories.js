@@ -4,7 +4,7 @@ import code from "../picture/code.png";
 import mobile from "../picture/mobile-app.png";
 import play from "../picture/play.png";
 import website from "../picture/website-design.png";
-import { Head } from "./Common";
+import { CategorieButton, Head } from "./Common";
 
 export default function Categories(props) {
   const content = [
@@ -40,6 +40,9 @@ export default function Categories(props) {
     },
   ];
 
+  const class1 = "main__service";
+  const class2 = 'main__descriptions';
+
   return (
     <div ref={props.refCategories}>
       <Head
@@ -47,19 +50,7 @@ export default function Categories(props) {
         el2="to make sure you have"
         el3="everything under control"
       />
-      <div className="main__service">
-        {content.map((el) => (
-          <div className='main__descriptions' key={el.id}>
-            <img src={el.img} alt="technology" />
-            <div>
-              <p>{el.number}</p>
-              <h2>{el.title}</h2>
-              <p>{el.desc}</p>
-            </div>
-            <img src={play} alt="arrow" />
-          </div>
-        ))}
-      </div>
+      <CategorieButton array={content} img={play} class1={class1} class2={class2}/>
     </div>
   );
 }

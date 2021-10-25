@@ -20,9 +20,9 @@ export default function Applications() {
 const projects = "applications__projects";
 
   function nextSlide() {
-//     setIndex((prevIndex) =>
-//     prevIndex === applications.length - 1 ? 0 : prevIndex + 1
-//   )
+    setIndex((prevIndex) =>
+    prevIndex === applications.length - 1 ? 0 : prevIndex + 1
+  )
   }
   return (
     <CategorieProject nextSlide={nextSlide} array={applications} index={index} setIndex={setIndex} imac={iphone} projects={projects} number="6%"/>
