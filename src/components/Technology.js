@@ -12,7 +12,7 @@ import git from "../picture/git.png";
 import api from "../picture/api.png";
 import {Head} from "./Common";
 
-export default function Technology() {
+export default function Technology(props) {
   const technology = [
     { id: 1, img: html, desc: "HTML" },
     { id: 2, img: css, desc: "CSS" },
@@ -28,7 +28,7 @@ export default function Technology() {
   ];
 
   return (
-    <div className="technology">
+    <div className="technology" ref={props.refTech}>
       <Head el1="Technology" el3="by all means"/>
       <div className="technology__paragraph">
         <p>

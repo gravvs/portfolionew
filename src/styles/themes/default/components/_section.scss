@@ -1,33 +1,3 @@
-p,
-h1,
-h2,
-h3,
-h4 {
-  color: white;
-}
-body {
-  background-image: url(../../../../picture/portfolio-back.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-button {
-  background-color: transparent;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  border: 1px solid white;
-  width: 15%;
-  border-radius: 25px;
-  margin: auto;
-  cursor: pointer;
-  p {
-    text-align: center;
-    white-space: nowrap;
-  }
-}
-p{
-  font-family: -apple-system;
-}
 .app {
   width: 100vw;
 }
@@ -53,7 +23,7 @@ p{
     margin-top: 4%;
     height: 220px;
     width: 7%;
-    div{
+    div {
       width: 100%;
     }
     h4 {
@@ -79,6 +49,13 @@ p{
     }
     span {
       font-size: 80px;
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.9486169467787114) 0%,
+        rgba(255, 255, 255, 1) 60%
+      );
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
   &__square {
@@ -109,8 +86,21 @@ p{
     align-items: center;
     div {
       width: 15%;
-      border-bottom: 2px solid rgb(179, 217, 245);
+      border-bottom: 2px solid rgb(118, 118, 226);
       margin: 15px;
+      a {
+        text-decoration: none;
+      }
+      p {
+        cursor: pointer;
+        color: rgb(118, 118, 226);
+      }
+    }
+  }
+  &__categories div.active {
+    border-bottom: 2px solid rgb(179, 217, 245);
+    p {
+      color: rgb(179, 217, 245);
     }
   }
   &__header {
@@ -145,17 +135,26 @@ p{
     border: 2px solid rgb(122, 122, 242);
     border-radius: 50px;
     margin: 15px 0;
+    cursor: pointer;
     div {
       width: 40%;
       h2,
       p {
         margin: 0;
+        cursor: pointer;
       }
       p {
         font-size: 12px;
       }
     }
   }
+}
+.main__descriptions.active {
+  width: 100%;
+  height: 100%;
+}
+.main__descriptions.false {
+  display: none;
 }
 .project {
   margin-top: 100px;
@@ -169,8 +168,9 @@ p{
     display: flex;
     position: relative;
     height: 70vh;
-    button{
+    button {
       margin: 15px 88px 5px 0;
+      width: 20%;
     }
   }
   &__subwrapper-first {
@@ -204,6 +204,11 @@ p{
   }
   &__first {
     width: 100%;
+    img {
+      -webkit-box-shadow: 3px 4px 8px 0px rgba(0, 0, 0, 1);
+      -moz-box-shadow: 3px 4px 8px 0px rgba(0, 0, 0, 1);
+      box-shadow: 3px 4px 8px 0px rgba(0, 0, 0, 1);
+    }
     div {
       left: 1%;
     }
@@ -267,14 +272,17 @@ p{
   }
 }
 .client {
+  height: 60vh;
+  display: grid;
   h2,
   h3 {
     text-align: center;
     font-size: 55px;
   }
-  button{
+  button {
     width: 10%;
     margin-left: 50%;
+    margin-top: 15px;
   }
   &__slideshow {
     margin: 0 auto;
@@ -288,14 +296,14 @@ p{
   &__opinion {
     width: 99%;
     height: 220px;
-    margin-right: 5px;
+    margin-right: 6px;
     border: 2px solid white;
     border-radius: 35px;
-    display: inline-block;
-    img{
+    display: inline-grid;
+    img {
       margin: 0 10px;
     }
-    div{
+    div {
       margin: 0 10px;
     }
     span img {
@@ -336,9 +344,145 @@ p{
     }
   }
 }
-.websites__wrapper,
-.applications__wrapper{
-  width: 70%;
+.websites,
+.applications,
+.ux,
+.software {
+  &__wrapper {
+    width: 70%;
+    margin: auto;
+  }
+  &__subwrapper {
+    display: flex;
+  }
+  &__mobile {
+    position: relative;
+    overflow: hidden;
+  }
+  &__iphone {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+  }
+  &__projects {
+    width: 98%;
+    height: 51%;
+    position: absolute;
+    top: 8%;
+    left: 1%;
+    transition: 1000ms ease;
+    img {
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+  }
+  &__content {
+    width: 51%;
+    white-space: nowrap;
+    overflow: hidden;
+    div {
+      height: 100%;
+      width: 100%;
+      display: inline-block;
+      transition: ease 1000ms;
+      position: relative;
+      h3,
+      p {
+        text-align: center;
+      }
+      button {
+        position: absolute;
+        bottom: 0;
+        left: 42%;
+        width: 20%;
+      }
+    }
+  }
+}
+.ux__mobile {
+  border-radius: 50px;
+  img {
+    width: 100%;
+  }
+}
+.applications {
+  &__projects {
+    width: 89%;
+    height: 95%;
+    position: absolute;
+    top: 2%;
+    left: 6%;
+  }
+  &__mobile {
+    height: 600px;
+  }
+}
+.slideshowDot {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+  cursor: pointer;
+}
+.slideshowDot.active {
+  background-color: $c-flirt;
+}
+.leftbuton {
+  &__wrapper {
+    width: 100px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border-radius: 70px;
+    margin: auto;
+  }
+  &__subwrapper {
+    transform: rotate(90deg);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    img:not(:nth-child(2)) {
+      transform: rotate(180deg);
+    }
+    img {
+      cursor: pointer;
+    }
+  }
+}
+.contact {
   margin: auto;
-  display: flex;
+  width: 50%;
+  form {
+    display: grid;
+    label {
+      color: white;
+      text-align: center;
+    }
+    input,
+    textarea {
+      width: 50%;
+      margin: 15px auto;
+      height: 50px;
+      border-radius: 10px;
+    }
+    textarea {
+      height: 150px;
+    }
+    button {
+      width: 20%;
+      color: white;
+      margin-top: 15px;
+      margin-left: auto;
+      height: 50px;
+    }
+    p {
+      width: 6%;
+      margin: 0 0 0 10%;
+      font-size: 40px;
+      cursor: pointer;
+    }
+  }
 }

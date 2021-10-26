@@ -1,39 +1,39 @@
 import React, { useState } from "react";
 import imac from "../picture/imac2.png";
-import { Button } from "./Common";
+import portfolio from "../picture/first-portfolio.png";
+import booking from "../picture/booking.png";
+import { CategorieProject } from "./Common";
 
 const websites = [
   {
-    id: 1,
+    id: 0,
     header: "Portfolio",
     desc: "It was my first portfolio",
     url: "https://portfolio-czenczek.netlify.app",
+    img: portfolio,
+    link: "https://portfolio-czenczek.netlify.app"
   },
   {
-    id: 2,
+    id: 1,
     header: "Booking Clone",
     desc: "Check yoursefl if you can see the diference",
     url: "https://czenczek.netlify.app",
+    img: booking,
+    link: "https://czenczek.netlify.app"
   },
 ];
 
 export default function Websites() {
   const [index, setIndex] = useState(0);
 
+  function nextSlide() {
+    setIndex((prevIndex) =>
+    prevIndex === websites.length - 1 ? 0 : prevIndex + 1
+  )
+  }
+
+  const projects = "websites__projects";
   return (
-    <div className="websites__wrapper">
-      <div>kropki</div>
-      <div>
-        <img src={imac} alt="iphone" />
-      </div>
-      {websites.map((el) => (
-        <div key={el.id}>
-          <h3>{el.header}</h3>
-          <p>{el.desc}</p>
-          <Button desc="Visit this site" />
-        </div>
-      ))}
-      <div>button right</div>
-    </div>
+        <CategorieProject nextSlide={nextSlide} array={websites} index={index} setIndex={setIndex} imac={imac} projects={projects} number="1%"/>
   );
 }

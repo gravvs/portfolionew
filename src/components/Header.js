@@ -1,12 +1,13 @@
 import React,{ useState } from "react";
-import {Head} from "./Common";
+import {Head, scrollToRef} from "./Common";
 
-export default function Header() {
+export default function Header(props) {
   const [active, setActive] = useState(true)
   
   const handleActive = () => {
     setActive(!active)
   }
+  
   return (
     <div className="header">
       <div className="header__sign">
@@ -15,13 +16,12 @@ export default function Header() {
         <h4>Front End Developer</h4>
       </div>
       <div className="header__menu">
-        <h4 onClick={handleActive}>Menu &#x022BD;</h4>
+        <h4 onClick={()=>{handleActive()}}>Menu &#x022BD;</h4>
         {active && <div>
-          <p>My portfolio</p>
-          <p>Service</p>
-          <p>Awards</p>
-          <p>Technology</p>
-          <p>Contact Me</p>
+          <p onClick={()=>scrollToRef(props.refMain)}>My portfolio</p>
+          <p onClick={()=>scrollToRef(props.refCategories)}>Service</p>
+          <p onClick={()=>scrollToRef(props.refTech)}>Technology</p>
+          <p onClick={()=>scrollToRef(props.refContact)}>Contact Me</p>
         </div>}
       </div>
       <div className="header__square">
