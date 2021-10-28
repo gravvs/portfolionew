@@ -7,8 +7,7 @@ export default function Header(props) {
   const handleActive = () => {
     setActive(!active)
   }
-  
-  console.log(window.innerHeight)
+
   return (
     <div className="header">
       <div className="header__sign">
@@ -16,7 +15,7 @@ export default function Header(props) {
         <h4>Bartosz Czenczek Portfolio</h4>
         <h4>Front End Developer</h4>
       </div>
-      
+
       <div className="header__menu">
         {!props.show &&
         <>

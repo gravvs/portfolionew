@@ -132,14 +132,18 @@ export function CategorieButton({
   class1,
   class2,
   class3,
+  funktion,
+  funktion2,
+  show,
+  text
 }) {
   return (
     <div
       className={class1}
       style={styles}
-    >
+    >{show && <div className="popup"><div className="popup__wrapper"><p onClick={funktion2}>x</p><p>{text}</p></div></div>}
       {array.map((el) => (
-        <div key={el.id} className={class2}>
+        <div key={el.id} className={class2} onClick={()=>funktion(el.id)}>
           <img src={el.img} alt="qoutation marks" />
           <div className={class3}>
              {el.number &&
