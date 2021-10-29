@@ -73,7 +73,7 @@ export function CategorieProject({
                 transform: `translate3d(${-index * 100}%, 0, 0)`,
               };
               return (
-                <div className={projects} style={swipeleft}>
+                <div className={projects} style={swipeleft} key={el.id}>
                   <img src={el.img} alt="project img" />
                 </div>
               );

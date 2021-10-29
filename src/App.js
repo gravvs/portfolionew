@@ -15,20 +15,17 @@ function App() {
   const refCategories = useRef(null);
   const refTech = useRef(null);
   const refContact = useRef(null);
-  const [height, setHeight] = useState(0)
 
   useEffect(() => {
-    window.onscroll = () => {
-      setHeight(window.pageYOffset)
-    }
-  },[height]);
+      window.addEventListener('scroll', greatHeight);
+      return () => window.removeEventListener('scroll', greatHeight);
+  },[]);
 
-  const greatHeight = ()=>{if(height>=refMain.current.offsetTop){setShow(true)}
-  else{setShow(false)}}
+  const greatHeight = ()=>{
+  if(window.scrollY>=refMain.current.offsetTop){setShow(true)}
+  else{setShow(false)}
+}
 
-  useEffect(() =>{
-    greatHeight()
-  });
   return (
     <div className="app">
       <Header {...{refMain,refCategories,refTech,refContact,show,setShow}}/>
