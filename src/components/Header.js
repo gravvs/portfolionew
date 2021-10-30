@@ -7,7 +7,7 @@ export default function Header(props) {
   const handleActive = () => {
     setActive(!active)
   }
-  
+
   return (
     <div className="header">
       <div className="header__sign">
@@ -15,7 +15,10 @@ export default function Header(props) {
         <h4>Bartosz Czenczek Portfolio</h4>
         <h4>Front End Developer</h4>
       </div>
+
       <div className="header__menu">
+        {!props.show &&
+        <>
         <h4 onClick={()=>{handleActive()}}>Menu &#x022BD;</h4>
         {active && <div>
           <p onClick={()=>scrollToRef(props.refMain)}>My portfolio</p>
@@ -23,6 +26,7 @@ export default function Header(props) {
           <p onClick={()=>scrollToRef(props.refTech)}>Technology</p>
           <p onClick={()=>scrollToRef(props.refContact)}>Contact Me</p>
         </div>}
+        </>}
       </div>
       <div className="header__square">
         <p>Engage</p>

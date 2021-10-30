@@ -45,7 +45,7 @@ useEffect(() => {
     return () => {
       resetTimeout();
     };
-  }, [index]);
+  });
   
   const class1 = "client__slideshowSlider";
   const class2 = "client__opinion";
