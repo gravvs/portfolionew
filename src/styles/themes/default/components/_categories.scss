@@ -1,0 +1,83 @@
+
+.websites,
+.applications,
+.ux,
+.software {
+  &__wrapper {
+    width: 70%;
+    margin: auto;
+  }
+  &__subwrapper {
+    display: flex;
+  }
+  &__mobile {
+    position: relative;
+    overflow: hidden;
+    img{
+      width: 100%;
+    }
+  }
+  &__iphone {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+  }
+  &__projects {
+    width: 98%;
+    height: 51%;
+    position: absolute;
+    top: 8%;
+    left: 1%;
+    transition: 1000ms ease;
+    img {
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+  }
+  &__content {
+    width: 51%;
+    white-space: nowrap;
+    overflow: hidden;
+    div {
+      height: 100%;
+      width: 100%;
+      display: inline-block;
+      transition: ease 1000ms;
+      position: relative;
+      h3,
+      p {
+        text-align: center;
+        white-space: break-spaces;
+      }
+      button {
+        position: absolute;
+        bottom: 0;
+        left: 42%;
+        width: 140px;
+        transition: 300ms;
+        &:hover{
+          border: 3px solid #9947c2;
+        }
+      }
+    }
+  }
+}
+.ux__mobile {
+  border-radius: 50px;
+  img {
+    width: 100%;
+  }
+}
+.applications {
+  &__projects {
+    width: 89%;
+    height: 95%;
+    position: absolute;
+    top: 2%;
+    left: 6%;
+  }
+  &__mobile {
+    height: 600px;
+  }
+}
