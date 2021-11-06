@@ -5,18 +5,46 @@ import booking from "../picture/booking.png";
 import { Button, scrollToRef } from "./Common";
 
 export default function Projects(props) {
-  const [hover0, setHover0] = useState(false);
-  const [hover1, setHover1] = useState(false);
-  const [hover2, setHover2] = useState(false);
+  const [number, setNumber] = useState(null)
 
-  const onHover = (el) => {
-    el(true);
+  const projected = [
+    {
+      id: 0,
+      class1: "project__subwrapper-first",
+      class2: "project__first",
+      img: quiz,
+      desc1: "Quiz with categories",
+      desc2: "| Quiz app",
+      href: "https://quiz-czenczek.netlify.app"
+    },
+    {
+      id: 1,
+      class1: "project__second-wrapper",
+      class2: "project__second",
+      img: first,
+      desc1: "First portfolio",
+      desc2: "| Website",
+      href: "https://portfolio-czenczek.netlify.app"
+    },
+    {
+      id: 2,
+      class1: "project__second-wrapper",
+      class2: "project__third",
+      img: booking,
+      desc1: "Clone of booking",
+      desc2: "| Static website",
+      href: "https://czenczek.netlify.app"
+    },
+  ]
+
+  const onHover = (index) => {
+    setNumber(index)
   };
 
-  const onLeave = (el) => {
-    el(false);
+  const onLeave = () => {
+    setNumber(null);
   };
-
+console.log(number)
   return (
     <div className="project">
       <h1>My projects</h1>
@@ -24,59 +52,22 @@ export default function Projects(props) {
         <Button desc="See all projects" />
       </div>
       <div className="project__wrapper">
-        <div className="project__subwrapper-first">
+        {projected.map((el)=>(
+        <div className={el.class1}>
           <div
-            className="project__first"
-            onMouseEnter={()=>onHover(setHover0)}
-            onMouseLeave={()=>onLeave(setHover0)}
+            className={el.class2}
+            onMouseEnter={() => onHover(el.id)}
+            onMouseLeave={() => onLeave()}
           >
-            <img src={quiz} alt="quiz" />
-            {hover0 && (
-              <div>
-                <p>Quiz with categories</p>
-                <p>| Quiz app</p>
+            <img src={el.img} alt="img" />
+              <div 
+              className={`project__description${el.id === number ? " visible" : ""}`}>
+                <p>{el.desc1}</p>
+                <p>{el.desc2}</p>
               </div>
-            )}
           </div>
-          <Button desc="See more" href="https://quiz-czenczek.netlify.app" />
-        </div>
-        <div className="project__subwrapper-second">
-          <div className="project__second-wrapper">
-            <div
-              className="project__second"
-              onMouseEnter={()=>onHover(setHover1)}
-              onMouseLeave={()=>onLeave(setHover1)}
-            >
-              <img src={first} alt="portfolio" />
-              {hover1 && (
-                <div>
-                  <p>First portfolio</p>
-                  <p>| Website</p>
-                </div>
-              )}
-            </div>
-            <Button
-              desc="See more"
-              href="https://portfolio-czenczek.netlify.app"
-            />
-          </div>
-          <div className="project__second-wrapper">
-            <div
-              className="project__third"
-              onMouseEnter={()=>onHover(setHover2)}
-              onMouseLeave={()=>onLeave(setHover2)}
-            >
-              <img src={booking} alt="booking" />
-              {hover2 && (
-                <div>
-                  <p>Clone of booking</p>
-                  <p>| Static website</p>
-                </div>
-              )}
-            </div>
-            <Button desc="See more" href="https://czenczek.netlify.app" />
-          </div>
-        </div>
+          <Button desc="See more" href={el.href} />
+        </div>))}
       </div>
     </div>
   );
