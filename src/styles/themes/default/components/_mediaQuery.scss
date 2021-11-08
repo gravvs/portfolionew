@@ -1,0 +1,104 @@
+@media only screen and (max-width: 1300px) {
+  .main {
+    &__descriptions div p {
+      font-size: 10px;
+    }
+  }
+  .header {
+    &__menu div p {
+      font-size: 12px;
+    }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .project {
+    button {
+      width: 150px;
+    }
+    &__wrapper {
+      width: 85%;
+      button {
+        width: 100px;
+        font-size: 12px;
+      }
+    }
+  }
+  .contact {
+    width: 75%;
+  }
+  .popup {
+    &__wrapper {
+      width: 50%;
+      p:nth-child(1) {
+        font-size: 35px;
+      }
+      p:nth-child(2) {
+        margin: 15px;
+      }
+    }
+  }
+  .leftbuton__wrapper {
+    height: 150px;
+  }
+  .header {
+    &__header {
+      h2 {
+        font-size: 26px;
+      }
+      span {
+        font-size: 70px;
+      }
+    }
+    &__square {
+      min-width: 200px;
+      height: 28%;
+      p {
+        font-size: 45px;
+      }
+    }
+  }
+  .websites,
+  .applications,
+  .ux,
+  .software {
+    &__content div {
+      height: 94%;
+      button {
+        left: 20%;
+      }
+    }
+  }
+  .main__service {
+    width: 75%;
+  }
+  .client {
+    &__slideshow {
+      max-width: 350px;
+    }
+    &__opinion {
+      width: 98%;
+      img {
+        width: 45px;
+      }
+    }
+  }
+  .footer {
+    &__sign,
+    &__img {
+      white-space: nowrap;
+    }
+    &__img img{
+        display: block;
+        margin: 10px;
+    }
+  }
+}
+@media only screen and (max-height: 800px) {
+  .main {
+    margin-top: 14%;
+  }
+  .technology,
+  .footer {
+    margin-top: 10%;
+  }
+}

@@ -1,0 +1,39 @@
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(95,83,181);
+  background: linear-gradient(0deg, rgba(95,83,181,1) 0%, rgba(16,21,113,1) 60%);
+    p {
+      cursor: pointer;
+    }
+    &__sign {
+      h2 {
+        font-size: 50px;
+      }
+      h4 {
+        font-size: 15px;
+      }
+    }
+    div {
+      margin: 0 30px;
+      p:hover{
+        color: #9947c2;
+        transition: 300ms;
+      }
+    }
+    &__img {
+      img {
+        width: 45px;
+        height: 45px;
+        margin: 0 10px;
+        cursor: pointer;
+        transition: 400ms;
+        white-space: nowrap;
+        &:hover{
+          transform: scale(1.2);
+        }
+      }
+    }
+  }

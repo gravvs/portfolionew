@@ -1,0 +1,84 @@
+
+.header {
+    position: relative;
+    height: 100vh;
+    h2 {
+      margin: auto;
+    }
+    &__sign {
+      margin-left: 2%;
+      margin-top: 5%;
+      h2 {
+        font-size: 50px;
+      }
+      h4 {
+        font-size: 15px;
+      }
+    }
+    &__menu {
+      margin-left: 2%;
+      margin-bottom: -60px;
+      margin-top: 4%;
+      height: 220px;
+      width: 7%;
+      min-width: 88px;
+      div {
+        width: 100%;
+      }
+      h4 {
+        font-weight: bold;
+        font-size: 25px;
+        cursor: pointer;
+      }
+      p {
+        font-size: 15px;
+        cursor: pointer;
+        transition: 300ms;
+        &:hover{
+          color: black;
+        }
+      }
+    }
+    &__header {
+      color: white;
+      width: 100%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      h2 {
+        font-size: 30px;
+        margin-top: 5%;
+      }
+      span {
+        font-size: 80px;
+        background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.9486169467787114) 0%,
+          rgba(255, 255, 255, 1) 60%
+        );
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    &__square {
+      border: 4px solid white;
+      width: 20%;
+      min-width: 260px;
+      height: 35%;
+      display: grid;
+      text-align: center;
+      float: right;
+      right: 0;
+      margin-right: 8%;
+      margin-bottom: 50px;
+      max-height: 340px;
+      justify-content: center;
+      align-content: center;
+      p {
+        font-size: 60px;
+        font-weight: bold;
+        margin: auto;
+      }
+    }
+  }
