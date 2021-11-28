@@ -9,10 +9,10 @@
       margin-left: 2%;
       margin-top: 5%;
       h2 {
-        font-size: 50px;
+        font-size: pxToRem(50);
       }
       h4 {
-        font-size: 15px;
+        font-size: pxToRem(15);
       }
     }
     &__menu {
@@ -27,11 +27,11 @@
       }
       h4 {
         font-weight: bold;
-        font-size: 25px;
+        font-size: pxToRem(25);
         cursor: pointer;
       }
       p {
-        font-size: 15px;
+        font-size: pxToRem(15);
         cursor: pointer;
         transition: 300ms;
         &:hover{
@@ -47,11 +47,11 @@
       justify-content: center;
       text-align: center;
       h2 {
-        font-size: 30px;
+        font-size: pxToRem(30);
         margin-top: 5%;
       }
       span {
-        font-size: 80px;
+        font-size: pxToRem(80);
         background: linear-gradient(
           0deg,
           rgba(0, 0, 0, 0.9486169467787114) 0%,
@@ -76,7 +76,7 @@
       justify-content: center;
       align-content: center;
       p {
-        font-size: 60px;
+        font-size: pxToRem(60);
         font-weight: bold;
         margin: auto;
       }

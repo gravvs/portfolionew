@@ -10,10 +10,10 @@
     }
     &__sign {
       h2 {
-        font-size: 50px;
+        font-size: pxToRem(50);
       }
       h4 {
-        font-size: 15px;
+        font-size: pxToRem(15);
       }
     }
     div {

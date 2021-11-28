@@ -33,10 +33,10 @@
       text-align: center;
       margin-top: 10%;
       h2 {
-        font-size: 30px;
+        font-size: pxToRem(30);
       }
       span {
-        font-size: 80px;
+        font-size: pxToRem(80);
       }
     }
     &__service {
@@ -69,11 +69,11 @@
           cursor: pointer;
         }
         p {
-          font-size: 12px;
+          font-size: pxToRem(12);
         }
         h2{
           white-space: nowrap;
-          font-size: 22px;
+          font-size: pxToRem(22);
         }
       }
     }

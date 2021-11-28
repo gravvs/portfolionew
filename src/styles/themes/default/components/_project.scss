@@ -9,7 +9,7 @@
   }
   h1 {
     text-align: center;
-    font-size: 55px;
+    font-size: pxToRem(55);
   }
   &__wrapper {
     width: 65%;

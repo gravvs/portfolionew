@@ -10,12 +10,12 @@
 @media only screen and (max-width: 1300px) {
   .main {
     &__descriptions div p {
-      font-size: 10px;
+      font-size: pxToRem(10);
     }
   }
   .header {
     &__menu div p {
-      font-size: 12px;
+      font-size: pxToRem(12);
     }
   }
 }
@@ -31,7 +31,7 @@
       width: 85%;
       button {
         width: 100px;
-        font-size: 12px;
+        font-size: pxToRem(12);
       }
     }
   }
@@ -42,7 +42,7 @@
     &__wrapper {
       width: 50%;
       p:nth-child(1) {
-        font-size: 35px;
+        font-size: pxToRem(35);
       }
       p:nth-child(2) {
         margin: 15px;
@@ -55,17 +55,17 @@
   .header {
     &__header {
       h2 {
-        font-size: 26px;
+        font-size: pxToRem(26);
       }
       span {
-        font-size: 70px;
+        font-size: pxToRem(70);
       }
     }
     &__square {
       min-width: 200px;
       height: 28%;
       p {
-        font-size: 45px;
+        font-size: pxToRem(45);
       }
     }
   }
@@ -124,10 +124,10 @@
   }
   .header__header {
     h2 {
-      font-size: 16px;
+      font-size: pxToRem(16);
     }
     span {
-      font-size: 36px;
+      font-size: pxToRem(36);
     }
   }
   .client {
@@ -135,13 +135,13 @@
   }
   .footer {
     h2 {
-      font-size: 40px;
+      font-size: pxToRem(40);
     }
     h4 {
-      font-size: 10px;
+      font-size: pxToRem(10);
     }
     p {
-      font-size: 11px;
+      font-size: pxToRem(11);
     }
     &__img img {
       width: 35px;
@@ -153,7 +153,7 @@
     &__paragraph {
       text-align: center;
       p {
-        font-size: 12px;
+        font-size: pxToRem(12);
       }
     }
     &__container {
@@ -162,7 +162,7 @@
         height: 48px;
       }
       p {
-        font-size: 8px;
+        font-size: pxToRem(8);
       }
     }
   }
@@ -219,31 +219,31 @@
   .header {
     &__sign {
       h2 {
-        font-size: 30px;
+        font-size: pxToRem(30);
       }
       h4 {
-        font-size: 12px;
+        font-size: pxToRem(12);
       }
     }
     &__square {
       min-width: 160px;
       height: 25%;
       p {
-        font-size: 30px;
+        font-size: pxToRem(30);
       }
     }
   }
   .main {
     margin-top: 33%;
     &__categories p {
-      font-size: 10px;
+      font-size: pxToRem(10);
     }
     &__descriptions div {
       h2 {
-        font-size: 13px;
+        font-size: pxToRem(13);
       }
       p {
-        font-size: 8px;
+        font-size: pxToRem(8);
       }
     }
   }
@@ -263,7 +263,7 @@
   }
   .footer {
     p {
-      font-size: 9px;
+      font-size: pxToRem(9);
     }
     div {
       margin: 0;
