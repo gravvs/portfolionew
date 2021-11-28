@@ -1,3 +1,12 @@
+@media only screen and (max-height: 800px) {
+  .main {
+    margin-top: 14%;
+  }
+  .technology,
+  .footer {
+    margin-top: 10%;
+  }
+}
 @media only screen and (max-width: 1300px) {
   .main {
     &__descriptions div p {
@@ -11,8 +20,8 @@
   }
 }
 @media only screen and (max-width: 1000px) {
-  body{
-  background-position: 50%;
+  body {
+    background-position: 50%;
   }
   .project {
     button {
@@ -90,18 +99,174 @@
     &__img {
       white-space: nowrap;
     }
-    &__img img{
-        display: block;
-        margin: 10px;
+    &__img img {
+      display: block;
+      margin: 10px;
+    }
+    & div {
+      margin: 0 15px;
     }
   }
 }
-@media only screen and (max-height: 800px) {
-  .main {
-    margin-top: 14%;
+@media only screen and (max-width: 800px) {
+  .leftbuton__wrapper {
+    width: 60px;
   }
-  .technology,
+  .main {
+    margin-top: 0;
+    &__service {
+      width: 95%;
+    }
+    &__descriptions {
+      width: 47%;
+      height: 18vh;
+    }
+  }
+  .header__header {
+    h2 {
+      font-size: 16px;
+    }
+    span {
+      font-size: 36px;
+    }
+  }
+  .client {
+    height: 70vh;
+  }
   .footer {
-    margin-top: 10%;
+    h2 {
+      font-size: 40px;
+    }
+    h4 {
+      font-size: 10px;
+    }
+    p {
+      font-size: 11px;
+    }
+    &__img img {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  .technology {
+    height: 103vh;
+    &__paragraph {
+      text-align: center;
+      p {
+        font-size: 12px;
+      }
+    }
+    &__container {
+      div {
+        width: 48px;
+        height: 48px;
+      }
+      p {
+        font-size: 8px;
+      }
+    }
+  }
+  .ux {
+    &__wrapper {
+      width: 95%;
+    }
+    &__subwrapper {
+      height: 250px;
+    }
+    &__mobile {
+      width: 85%;
+      top: 28%;
+    }
+  }
+  .websites {
+    &__wrapper {
+      width: 95%;
+    }
+    &__mobile {
+      width: 35%;
+      height: 49%;
+      top: 27%;
+      left: 19%;
+      position: absolute;
+    }
+    &__content {
+      width: 65%;
+    }
+    &__subwrapper {
+      height: 400px;
+      position: relative;
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .project {
+    &__subwrapper-first {
+      width: 80%;
+      top: 34%;
+    }
+    &__second-wrapper:nth-child(2) {
+      top: 67%;
+    }
+    &__wrapper button {
+      margin: 15px 100px 5px 0;
+    }
+  }
+}
+@media only screen and (max-width: 350px) {
+  .app {
+    overflow: hidden;
+  }
+  .header {
+    &__sign {
+      h2 {
+        font-size: 30px;
+      }
+      h4 {
+        font-size: 12px;
+      }
+    }
+    &__square {
+      min-width: 160px;
+      height: 25%;
+      p {
+        font-size: 30px;
+      }
+    }
+  }
+  .main {
+    margin-top: 33%;
+    &__categories p {
+      font-size: 10px;
+    }
+    &__descriptions div {
+      h2 {
+        font-size: 13px;
+      }
+      p {
+        font-size: 8px;
+      }
+    }
+  }
+  .project {
+    &__subwrapper-first {
+      width: 70%;
+      top: 38%;
+    }
+  }
+  .client {
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact form button{
+    width: 60%;
+  }
+  .footer {
+    p {
+      font-size: 9px;
+    }
+    div {
+      margin: 0;
+    }
   }
 }
