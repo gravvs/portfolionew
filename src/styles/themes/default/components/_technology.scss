@@ -4,7 +4,7 @@
   display: grid;
   background-color: rgb(0, 0, 61);
   h2 {
-    font-size: 55px;
+    font-size: pxToRem(55);
     text-align: center;
     align-self: center;
   }
@@ -12,7 +12,7 @@
     display: grid;
     justify-content: center;
     p {
-      font-size: 20px;
+      font-size: pxToRem(20);
     }
   }
   &__tools {
@@ -43,7 +43,7 @@
     }
     p {
       text-align: center;
-      font-size: 12px;
+      font-size: pxToRem(12);
     }
   }
 }

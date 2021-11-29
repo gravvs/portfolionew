@@ -8,7 +8,7 @@ const websites = [
   {
     id: 0,
     header: "Portfolio",
-    desc: "It was my first portfolio",
+    desc: "It is my first portfolio",
     url: "https://portfolio-czenczek.netlify.app",
     img: portfolio,
     link: "https://portfolio-czenczek.netlify.app"
