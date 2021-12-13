@@ -225,6 +225,13 @@
       justify-content: center;
       align-items: center;
     }
+    &__first img,
+    &__second img,
+    &__third img{
+      -webkit-box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 1);
+-moz-box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 1);
+box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 1);
+    }
   }
   .project__second div,
   .project__third div {
