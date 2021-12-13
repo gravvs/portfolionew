@@ -88,9 +88,7 @@ export function CategorieProject({
             >
               <h3>{el.header}</h3>
               <p>{el.desc}</p>
-              <a href={el.link} target="__blank">
-                <Button desc="Visit this site" />
-              </a>
+                <Button desc="Visit this site" href={el.link}/>
             </div>
           ))}
         </div>
@@ -107,7 +105,7 @@ export function UxSoftware({ array, img }) {
         <div className="slideshowDots">
           <div
             className="slideshowDot"
-            style={{ "background-color": "purple" }}
+            style={{ "background": "purple" }}
           ></div>
         </div>
         <div className="ux__mobile">
