@@ -197,7 +197,7 @@
       position: relative;
     }
   }
-  .applications__projects{
+  .applications__projects {
     max-width: 108px;
   }
 }
@@ -227,10 +227,10 @@
     }
     &__first img,
     &__second img,
-    &__third img{
+    &__third img {
       -webkit-box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 1);
--moz-box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 1);
-box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 1);
+      -moz-box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 1);
+      box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 1);
     }
   }
   .project__second div,
@@ -243,17 +243,17 @@ box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 1);
   .popup__wrapper {
     width: 100%;
     height: 25%;
+  }
+  .main {
+    &__service {
+      height: unset;
+      justify-content: center;
     }
-    .main{
-      &__service{
-        height: unset;
-        justify-content: center;
-      }
-      &__descriptions{
-        width: 85%;
-        height: 15vh;
-      }
+    &__descriptions {
+      width: 85%;
+      height: 15vh;
     }
+  }
 }
 @media only screen and (max-width: 350px) {
   .app {
