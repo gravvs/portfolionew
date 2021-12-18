@@ -44,9 +44,6 @@ export default function Client(props) {
     };
   });
 
-  const class1 = "client__slideshowSlider";
-  const class2 = "client__opinion";
-  const class3 = "client__text";
   const styles = { transform: `translate3d(${-index * 101}%, 0, 0)` };
 
   return (
@@ -60,9 +57,9 @@ export default function Client(props) {
             <CategorieButton
               array={backendData}
               img={angled}
-              class1={class1}
-              class2={class2}
-              class3={class3}
+              class1="client__slideshowSlider"
+              class2="client__opinion"
+              class3="client__text"
               styles={styles}
               funktion={()=>console.log("you found me")}
             />
