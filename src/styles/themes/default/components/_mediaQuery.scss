@@ -1,4 +1,4 @@
-@media only screen and (max-height: 800px) {
+@media only screen and (max-height: 850px) {
   .main {
     margin-top: 14%;
   }
@@ -175,7 +175,6 @@
     }
     &__mobile {
       width: 85%;
-      top: 28%;
     }
   }
   .websites {
@@ -188,6 +187,7 @@
       top: 27%;
       left: 19%;
       position: absolute;
+      max-width: 125px;
     }
     &__content {
       width: 65%;
@@ -197,18 +197,61 @@
       position: relative;
     }
   }
+  .applications__projects {
+    max-width: 108px;
+  }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .project {
+    &__wrapper {
+      flex-direction: column;
+      button {
+        margin: 0;
+      }
+    }
+    &__second-wrapper {
+      width: 100%;
+      margin: 10px auto;
+      position: unset;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
     &__subwrapper-first {
-      width: 80%;
-      top: 34%;
+      width: 100%;
+      top: 0;
+      margin: 10px 10px 20px 0;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
     }
-    &__second-wrapper:nth-child(2) {
-      top: 67%;
+    &__first img,
+    &__second img,
+    &__third img {
+      -webkit-box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 1);
+      -moz-box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 1);
+      box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 1);
     }
-    &__wrapper button {
-      margin: 15px 100px 5px 0;
+  }
+  .project__second div,
+  .project__third div {
+    left: -2%;
+  }
+  .header__menu div p {
+    font-size: pxToRem(16);
+  }
+  .popup__wrapper {
+    width: 100%;
+    height: 25%;
+  }
+  .main {
+    &__service {
+      height: unset;
+      justify-content: center;
+    }
+    &__descriptions {
+      width: 85%;
+      height: 15vh;
     }
   }
 }
@@ -247,18 +290,12 @@
       }
     }
   }
-  .project {
-    &__subwrapper-first {
-      width: 70%;
-      top: 38%;
-    }
-  }
   .client {
     height: 90vh;
     justify-content: center;
     align-items: center;
   }
-  .contact form button{
+  .contact form button {
     width: 60%;
   }
   .footer {

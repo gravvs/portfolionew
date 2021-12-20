@@ -44,7 +44,6 @@ export default function Projects(props) {
   const onLeave = () => {
     setNumber(null);
   };
-console.log(number)
   return (
     <div className="project">
       <h1>My projects</h1>
@@ -53,7 +52,7 @@ console.log(number)
       </div>
       <div className="project__wrapper">
         {projected.map((el)=>(
-        <div className={el.class1}>
+        <div className={el.class1} key={el.id}>
           <div
             className={el.class2}
             onMouseEnter={() => onHover(el.id)}
