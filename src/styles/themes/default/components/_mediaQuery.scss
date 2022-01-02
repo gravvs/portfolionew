@@ -205,6 +205,8 @@
   .project {
     &__wrapper {
       flex-direction: column;
+      height: unset;
+      min-height: unset;
       button {
         margin: 0;
       }
@@ -260,6 +262,7 @@
     overflow: hidden;
   }
   .header {
+    min-height: unset;
     &__sign {
       h2 {
         font-size: pxToRem(30);
