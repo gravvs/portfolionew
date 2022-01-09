@@ -122,12 +122,16 @@
       height: 18vh;
     }
   }
-  .header__header {
-    h2 {
-      font-size: pxToRem(16);
-    }
-    span {
-      font-size: pxToRem(36);
+  .header {
+    min-height: 650px;
+    max-height: 700px;
+    &__header {
+      h2 {
+        font-size: pxToRem(16);
+      }
+      span {
+        font-size: pxToRem(36);
+      }
     }
   }
   .client {
@@ -200,6 +204,9 @@
   .applications__projects {
     max-width: 108px;
   }
+  .project__subwrapper-first{
+    top: 24%;
+  }
 }
 @media only screen and (max-width: 600px) {
   .project {
@@ -208,14 +215,15 @@
       height: unset;
       min-height: unset;
       button {
-        margin: 0;
+        margin: 10px 0 0 0;
+        width: 50%;
       }
     }
     &__second-wrapper {
       width: 100%;
       margin: 10px auto;
       position: unset;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
     }
@@ -223,7 +231,7 @@
       width: 100%;
       top: 0;
       margin: 10px 10px 20px 0;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
     }
@@ -297,6 +305,9 @@
     height: 90vh;
     justify-content: center;
     align-items: center;
+    &__slideshow{
+      width: 90%;
+    }
   }
   .contact form button {
     width: 60%;
