@@ -1,0 +1,323 @@
+@media only screen and (max-height: 850px) {
+  .main {
+    margin-top: 14%;
+  }
+  .technology,
+  .footer {
+    margin-top: 10%;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .main {
+    &__descriptions div p {
+      font-size: pxToRem(10);
+    }
+  }
+  .header {
+    &__menu div p {
+      font-size: pxToRem(12);
+    }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  body {
+    background-position: 50%;
+  }
+  .project {
+    button {
+      width: 150px;
+    }
+    &__wrapper {
+      width: 85%;
+      button {
+        width: 100px;
+        font-size: pxToRem(12);
+      }
+    }
+  }
+  .contact {
+    width: 75%;
+  }
+  .popup {
+    &__wrapper {
+      width: 50%;
+      p:nth-child(1) {
+        font-size: pxToRem(35);
+      }
+      p:nth-child(2) {
+        margin: 15px;
+      }
+    }
+  }
+  .leftbuton__wrapper {
+    height: 150px;
+  }
+  .header {
+    &__header {
+      h2 {
+        font-size: pxToRem(26);
+      }
+      span {
+        font-size: pxToRem(70);
+      }
+    }
+    &__square {
+      min-width: 200px;
+      height: 28%;
+      p {
+        font-size: pxToRem(45);
+      }
+    }
+  }
+  .websites,
+  .applications,
+  .ux,
+  .software {
+    &__content div {
+      height: 94%;
+      button {
+        left: 20%;
+      }
+    }
+  }
+  .main__service {
+    width: 75%;
+  }
+  .client {
+    &__slideshow {
+      max-width: 350px;
+    }
+    &__opinion {
+      width: 98%;
+      img {
+        width: 45px;
+      }
+    }
+  }
+  .footer {
+    &__sign,
+    &__img {
+      white-space: nowrap;
+    }
+    &__img img {
+      display: block;
+      margin: 10px;
+    }
+    & div {
+      margin: 0 15px;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .leftbuton__wrapper {
+    width: 60px;
+  }
+  .main {
+    margin-top: 0;
+    &__service {
+      width: 95%;
+    }
+    &__descriptions {
+      width: 47%;
+      height: 18vh;
+    }
+  }
+  .header {
+    min-height: 650px;
+    max-height: 700px;
+    &__header {
+      h2 {
+        font-size: pxToRem(16);
+      }
+      span {
+        font-size: pxToRem(36);
+      }
+    }
+  }
+  .client {
+    height: 70vh;
+  }
+  .footer {
+    h2 {
+      font-size: pxToRem(40);
+    }
+    h4 {
+      font-size: pxToRem(10);
+    }
+    p {
+      font-size: pxToRem(11);
+    }
+    &__img img {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  .technology {
+    height: 103vh;
+    &__paragraph {
+      text-align: center;
+      p {
+        font-size: pxToRem(12);
+      }
+    }
+    &__container {
+      div {
+        width: 48px;
+        height: 48px;
+      }
+      p {
+        font-size: pxToRem(8);
+      }
+    }
+  }
+  .ux {
+    &__wrapper {
+      width: 95%;
+    }
+    &__subwrapper {
+      height: 250px;
+    }
+    &__mobile {
+      width: 85%;
+    }
+  }
+  .websites {
+    &__wrapper {
+      width: 95%;
+    }
+    &__mobile {
+      width: 35%;
+      height: 49%;
+      top: 27%;
+      left: 19%;
+      position: absolute;
+      max-width: 125px;
+    }
+    &__content {
+      width: 65%;
+    }
+    &__subwrapper {
+      height: 400px;
+      position: relative;
+    }
+  }
+  .applications__projects {
+    max-width: 108px;
+  }
+  .project__subwrapper-first{
+    top: 24%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .project {
+    &__wrapper {
+      flex-direction: column;
+      height: unset;
+      min-height: unset;
+      button {
+        margin: 10px 0 0 0;
+        width: 50%;
+      }
+    }
+    &__second-wrapper {
+      width: 100%;
+      margin: 10px auto;
+      position: unset;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__subwrapper-first {
+      width: 100%;
+      top: 0;
+      margin: 10px 10px 20px 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__first img,
+    &__second img,
+    &__third img {
+      -webkit-box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 1);
+      -moz-box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 1);
+      box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 1);
+    }
+  }
+  .project__second div,
+  .project__third div {
+    left: -2%;
+  }
+  .header__menu div p {
+    font-size: pxToRem(16);
+  }
+  .popup__wrapper {
+    width: 100%;
+    height: 25%;
+  }
+  .main {
+    &__service {
+      height: unset;
+      justify-content: center;
+    }
+    &__descriptions {
+      width: 85%;
+      height: 15vh;
+    }
+  }
+}
+@media only screen and (max-width: 350px) {
+  .app {
+    overflow: hidden;
+  }
+  .header {
+    min-height: unset;
+    &__sign {
+      h2 {
+        font-size: pxToRem(30);
+      }
+      h4 {
+        font-size: pxToRem(12);
+      }
+    }
+    &__square {
+      min-width: 160px;
+      height: 25%;
+      p {
+        font-size: pxToRem(30);
+      }
+    }
+  }
+  .main {
+    margin-top: 33%;
+    &__categories p {
+      font-size: pxToRem(10);
+    }
+    &__descriptions div {
+      h2 {
+        font-size: pxToRem(13);
+      }
+      p {
+        font-size: pxToRem(8);
+      }
+    }
+  }
+  .client {
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    &__slideshow{
+      width: 90%;
+    }
+  }
+  .contact form button {
+    width: 60%;
+  }
+  .footer {
+    p {
+      font-size: pxToRem(9);
+    }
+    div {
+      margin: 0;
+    }
+  }
+}

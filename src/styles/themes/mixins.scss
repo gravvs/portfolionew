@@ -1,0 +1,136 @@
+@function pxToRem($pxsize, $rembase: 16) {
+  @return ($pxsize / $rembase) + rem;
+}
+
+@mixin boxShadow($arg) {
+  -webkit-box-shadow: $arg;
+  box-shadow: $arg;
+}
+
+@mixin myFlex() {
+  $prefixes: (-webkit-box, -ms-flexbox, -webkit-flex, flex);
+  @each $prefix in $prefixes {
+    display: $prefix;
+  }
+}
+
+@mixin bottomRadius($arg) {
+  border-bottom-left-radius: $arg;
+  border-bottom-right-radius: $arg;
+}
+
+@mixin firstsecondthird {
+  position: relative;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+  .project__description {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    color: transparent;
+    transition: 500ms;
+    background-color: rgba(0, 0, 0, 0.79);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 25px;
+  transition: 500ms;
+  opacity: 0;
+    p {
+      font-family: -apple-system;
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+.visible{
+  opacity: 1;
+}
+}
+$sizes: 1, 2, 3, 4, 5;
+@mixin createCol() {
+  @each $size in $sizes {
+    $index: index($sizes, $size);
+    .col-#{$index} {
+      width: $size;
+    }
+  }
+}
+
+@mixin categories($prowidth,$proheight,$protop,$proleft,$mobradius) {
+  &__wrapper {
+    width: 70%;
+    margin: auto;
+  }
+  &__subwrapper {
+    display: flex;
+    height: 600px;
+    margin-top: 20px;
+  }
+  &__mobile {
+    position: relative;
+    overflow: hidden;
+    align-self: center;
+    img{
+      width: 100%;
+      border-radius: $mobradius;
+    }
+  }
+  &__iphone {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+  }
+  &__projects {
+    width: $prowidth;
+    height: $proheight;
+    position: absolute;
+    top: $protop;
+    left: $proleft;
+    transition: 1000ms ease;
+    img {
+      width: 98%;
+      height: 100%;
+      z-index: 1;
+    }
+  }
+  &__content {
+    width: 51%;
+    white-space: nowrap;
+    overflow: hidden;
+    div {
+      height: 94%;
+      width: 100%;
+      display: inline-block;
+      transition: ease 1000ms;
+      position: relative;
+      h3,
+      p {
+        text-align: center;
+        white-space: break-spaces;
+      }
+      button {
+        position: absolute;
+        bottom: 0;
+        left: 42%;
+        width: 140px;
+        transition: 300ms;
+        &:hover{
+          border: 3px solid #9947c2;
+        }
+      }
+    }
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

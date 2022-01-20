@@ -1,0 +1,33 @@
+@import './variables.scss';
+@import './normalize';
+@import './fonts.scss';
+*{
+  scroll-behavior: smooth;
+}
+p,
+h1,
+h2,
+h3,
+h4 {
+  color: white;
+  cursor: default;
+}
+button {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid white;
+  width: 15%;
+  border-radius: 25px;
+  margin: auto;
+  cursor: pointer;
+  p {
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+}
+p {
+  font-family: -apple-system;
+}

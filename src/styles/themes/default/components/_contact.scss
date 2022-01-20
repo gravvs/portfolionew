@@ -1,0 +1,35 @@
+
+.contact {
+    margin: auto;
+    width: 50%;
+    form {
+      display: grid;
+      label {
+        color: white;
+        text-align: center;
+      }
+      input,
+      textarea {
+        width: 50%;
+        margin: 15px auto;
+        height: 50px;
+        border-radius: 10px;
+      }
+      textarea {
+        height: 150px;
+      }
+      button {
+        width: 20%;
+        color: white;
+        margin-top: 15px;
+        margin-left: auto;
+        height: 50px;
+      }
+      p {
+        width: 6%;
+        margin: 0 0 0 10%;
+        font-size: pxToRem(40);
+        cursor: pointer;
+      }
+    }
+  }

@@ -1,0 +1,79 @@
+.app {
+  background-image: url(../../../../picture/portfolio-back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+.slideshowDot {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+  cursor: pointer;
+}
+.slideshowDot.active {
+  background-color: $c-flirt;
+}
+.leftbuton {
+  &__wrapper {
+    width: 100px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border-radius: 70px;
+    margin: auto;
+    transition: 300ms;
+    &:hover{
+      border: 2px solid #8b2dba;
+    }
+  }
+  &__subwrapper {
+    transform: rotate(90deg);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    img:not(:nth-child(2)) {
+      transform: rotate(180deg);
+    }
+    img {
+      cursor: pointer;
+    }
+  }
+}
+.noscroll{
+  overflow: hidden;
+}
+.popup{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(145, 145, 145, 0.555);
+  z-index: 4;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  &__wrapper{
+    width: 25%;
+    height: 20%;
+    background-color: rgb(30, 30, 106);
+    border-radius: 50px;
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+-moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  }
+  p:nth-child(1){
+    text-align: right;
+margin: auto 35px auto 0;
+font-size: pxToRem(26);
+cursor: pointer;
+  }
+  p:nth-child(2){
+    text-align: center;
+font-size: pxToRem(18);
+padding: 5px 10px;
+  }
+}

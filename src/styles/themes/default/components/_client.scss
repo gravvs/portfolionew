@@ -1,0 +1,52 @@
+
+.client {
+    height: 60vh;
+    display: grid;
+    transition: 300ms;
+    button:hover{
+      border: 1px solid #9947c2;
+    }
+    h2,
+    h3 {
+      text-align: center;
+      font-size: pxToRem(55);
+    }
+    button {
+      width: 120px;
+      margin-left: 50%;
+      margin-top: 15px;
+    }
+    &__slideshow {
+      margin: 0 auto;
+      overflow: hidden;
+      max-width: 500px;
+    }
+    &__slideshowSlider {
+      white-space: nowrap;
+      transition: ease 1000ms;
+    }
+    &__opinion {
+      width: 99%;
+      height: 220px;
+      margin-right: 6px;
+      border: 2px solid white;
+      border-radius: 35px;
+      display: inline-grid;
+      img {
+        margin: 0 10px;
+      }
+      div {
+        margin: 0 10px;
+        padding: 0 10px;
+      }
+      span img {
+        transform: rotate(180deg);
+        float: right;
+      }
+    }
+    &__text {
+      p {
+        white-space: normal;
+      }
+    }
+  }

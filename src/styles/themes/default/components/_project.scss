@@ -1,0 +1,76 @@
+.project {
+  margin-top: 100px;
+  transition: 300ms;
+  a {
+    text-decoration: none;
+  }
+  button:hover {
+    border: 1px solid #9947c2;
+  }
+  h1 {
+    text-align: center;
+    font-size: pxToRem(55);
+  }
+  &__wrapper {
+    width: 65%;
+    margin: 50px auto;
+    display: flex;
+    position: relative;
+    height: 70vh;
+    button {
+      margin: 15px 88px 5px 0;
+      width: 100px;
+    }
+  }
+  &__subwrapper-first {
+    width: 60%;
+    position: relative;
+    top: 10%;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .project__button {
+      margin-right: 10%;
+    }
+  }
+  &__second-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 10px;
+    &:nth-child(2) {
+      top: 53%;
+    }
+  }
+  &__first,
+  &__second,
+  &__third {
+    @include firstsecondthird;
+  }
+  &__first {
+    width: 100%;
+    img {
+      -webkit-box-shadow: 3px 4px 8px 0px rgba(0, 0, 0, 1);
+      -moz-box-shadow: 3px 4px 8px 0px rgba(0, 0, 0, 1);
+      box-shadow: 3px 4px 8px 0px rgba(0, 0, 0, 1);
+    }
+    div {
+      left: 0%;
+    }
+  }
+  &__second,
+  &__third {
+    width: 90%;
+    div {
+      right: -1%;
+    }
+  }
+  &__third {
+    margin-top: 10px;
+  }
+}

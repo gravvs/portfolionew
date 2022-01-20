@@ -1,0 +1,11 @@
+
+.websites{
+  @include categories($prowidth: 98%, $proheight: 51%, $protop: 8%, $proleft: 1%,$mobradius:0)
+}
+.applications{
+  @include categories($prowidth:89%, $proheight:95%, $protop:2%, $proleft: 6%,$mobradius:0)
+}
+.ux,
+.software{
+  @include categories($prowidth: 98%, $proheight: 51%, $protop: 8%, $proleft: 1%,$mobradius:50px)
+}
